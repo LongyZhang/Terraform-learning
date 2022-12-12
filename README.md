@@ -30,3 +30,8 @@
         using the terraform apply to add service to AWS provider (e.g. add virtual machine)   
 
     Terraform destroy -> it can destroy the all of resource as associate with this project
+    
+5   What is S3 Bucket? 
+    1: Amazon Simple Storage Service is object storing service 
+    ![image](https://user-images.githubusercontent.com/101307724/207036366-4d8a0b00-5ef3-4ec5-8fb2-2f4cfcbaebd6.png)
+
