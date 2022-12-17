@@ -38,11 +38,11 @@ variable "object_test" {
   })
 
   default = {
-    age = 1
-    color = "red"
+    age          = 1
+    color        = "red"
     favorite_pet = true
-    food = ["chicken","beef"]
-    name = "Winnie-pooh"
+    food         = ["chicken", "beef"]
+    name         = "Winnie-pooh"
   }
 }
 

@@ -100,7 +100,32 @@
             }
             }
 
-    }
+            }
+    3: Variable definition precedence: 
+        1 :env variables
+        2 :terraform.tfvars
+        3 :*.auto.tfvar
+        4 : terraform apply -var xxx="sss"
+
+        The command line variable has highest permission to reload variables
+        
+1   terraform dependency
+
+    1: we can use depends_on to create dependency between different resources
+    2:resource "local_file" "whale" {
+                filename="/root/whale"
+                content="whale"
+                depends_on=[local_file.krill]
+                }
+                resource "local_file" "krill" {
+                filename="/root/krill"
+                content="krill"
+
+                }
+
+1   Output variables
+
+    1: this variable can store value and output value in command line or files
 
 1   the workflow of terraform
 
@@ -116,6 +141,11 @@
     2: terraform plan ()
     3: terraform apply
     4: terraform destory 
+    5: terraform validate
+    6: terraform show (show the current state)
+    7: terraform providers (show the current providers)
+    8: terraform output (list out all of output)
+    9: terraform graph
 
 2   what is prerequesite of terraform? and how to establish connection between aws and terraform? 
 
