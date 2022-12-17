@@ -183,4 +183,64 @@
     2: Server templating "Docker, Packer, Vagrant"
     3: Provisioning tools "Terraform, CloudFormation"
 
+7   inmutable infrastructure 
 
+    1: when we update the resource, it destroy previous resource and create new one. it is desirable approach to manage update for all cases
+
+    2: this issue can be solved by using life cycle rule
+
+8   terraform life cycle
+
+    1: it will create the new resource , then destory old one. If we set it to be true
+
+        lifecycle {
+        create_before_destroy = true
+        }
+    2: If we dont want to destory old resource (e.g.SQL database)
+        lifecycle {
+            # create_before_destroy = true
+            prevent_destroy = true
+        }
+
+    3: Ignore_change, if we want to ignore changes
+        lifecycle {
+            # create_before_destroy = true
+            ignore_changes=[
+                tags
+            ]
+        }
+
+9   Terraform date source vs Resource
+
+    1: what is the data source of terraform
+
+    it uses keywords data, it only reads infrastructure
+
+    2: what is resource ?
+
+    it uses keywords resource, it can creates, updates and destroys infrastructure. it is also called managed resources
+
+10  Terraform count
+    1: it can run the resource manys times 
+    issue: it will do same resource many time
+
+    2: solution:
+        set variable to be list type.
+        ## resource
+        resource "local_file" "pet" {
+        filename = var.filename[count.index]
+        content  = var.contents[count.index]
+        count    = 3
+        }
+        ## variables
+        variable "contents"{
+        default=["i love dog", "i love cat", "i love pets"]
+        }
+    3 Notice: the count number must match with another
+
+11  Terraform foreach
+    1: for each argument only work with map or set
+
+    2: we can convert the list to set by using toset()
+
+    3: set type does not allow duplicated value 
