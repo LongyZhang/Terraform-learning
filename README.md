@@ -61,6 +61,47 @@
          ami = random_id.server_id.keepers.ami_id
     }
 
+1   Terraform variables 
+
+    1: We can put reused variables into variables.tf 
+    2: variables support many data structure and types
+    variable "content" {
+        ## this is key type in variables
+        default = {
+            "one"   = "i love pets"
+            "two"   = "i love dog"
+            "three" = "i love cat"
+        }
+        ## this is list type in variables
+        description= ["dog","pets","cat"]
+        type = list(any)
+        
+        ## this is set type in variables , set type does not allow dupulicated value
+        description= ["dog","pets","dog"]
+        type = set(any)
+
+        ## this is object tpye, i personally prefer to use this 
+        variable "object_test" {
+            type = object({
+                name         = string
+                color        = string
+                age          = number
+                food         = list(any)
+                favorite_pet = bool
+
+            })
+
+            default = {
+                age = 1
+                color = "red"
+                favorite_pet = true
+                food = ["chicken","beef"]
+                name = "Winnie-pooh"
+            }
+            }
+
+    }
+
 1   the workflow of terraform
 
     1: Write terraform file (.tf extension)
