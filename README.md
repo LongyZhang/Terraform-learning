@@ -35,6 +35,32 @@
         acl ="private"
     }
 
+1   Teeraform config file type
+
+    1: main.tf   (main config file containing resource definition)
+    2: variables.tf (contrains variable declarations)
+    3: outputs.tf (contain outputs from resource)
+    4: provider.tf (contains provider definition)
+
+1   What is random provider?
+
+    1: random provider is logic provider which can be called from another resource
+
+    resource random_id "server_id"{
+        keepers = {
+            ami_id = var.ami_id
+        }
+
+        byte_length = 8
+    }
+
+    resource "aws_instance" "server" {
+        tags= {
+            Name = "web-server ${random_id.server.hex}"
+        }
+         ami = random_id.server_id.keepers.ami_id
+    }
+
 1   the workflow of terraform
 
     1: Write terraform file (.tf extension)
@@ -48,8 +74,7 @@
     1: terraform init (initialize the backend)
     2: terraform plan ()
     3: terraform apply
-    4: terraform destory
- 
+    4: terraform destory 
 
 2   what is prerequesite of terraform? and how to establish connection between aws and terraform? 
 
