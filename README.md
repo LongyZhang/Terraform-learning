@@ -251,3 +251,36 @@
     1: S3 bucket is container or directory with store all your files, everything in this bucket is object
     2: For example, we put rthe pets.json into S3 bucket, this file can be accessed by url https://pets.us-west-1.amazonaws.com/pets.json
     3: every objects contain key, value and MetaData. the key is name of file with extension, the value is data. Metadata contains the owner, size and last modified
+
+13  DynamoDB with Terraform
+
+    1: DynamoDB is a fully managed proprietary NoSQL database service that supports key–value and document data structures
+
+    ##hash_key is primary key in DynamoDB
+    ##attribute block is meant to define the primary key
+    ##name is table name
+
+    resource "aws_dynamodb_table" "cars" {
+        name         = "car"
+        hash_key     = "VIN"
+        billing_mode = "PAY_PER_REQUEST"
+        attribute {
+            name = "VIN"
+            type = "S"
+        }
+
+        }
+
+        resource "aws_dynamodb_table_item" "car-item" {
+        table_name = aws_dynamodb_table.cars.name
+        hash_key   = aws_dynamodb_table.cars.hash_key
+        item       = <<EOF
+                {
+                    "Manufacturer": {"S":"Subaru"},
+                    "Make": {"S":"WRX"},
+                    "Year": {"N":"2022"},
+                    "VIN": {"S":"12312"}
+                }
+
+            EOF
+        }
