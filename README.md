@@ -297,9 +297,11 @@
 
     1: EC2 instance stands for Elastic Compute Cloud, it can create image from different OS 
     
-    2: Create my first EC2 image from ubuntu
-    ![image](https://user-images.githubusercontent.com/101307724/208286555-2e278187-5074-4fee-89e3-394d733eca80.png)
+    ![image](https://user-images.githubusercontent.com/101307724/208286576-a1cf6607-17fa-4dae-ab3f-b85a4f0fcf54.png)
 
+    2: Create my first EC2 image from ubuntu
+    
+    3: Use ssh -i ~/Downloads/web.pen ubuntu@public IP to access my instance from command prompt 
 
     
 
