@@ -244,3 +244,10 @@
     2: we can convert the list to set by using toset()
 
     3: set type does not allow duplicated value 
+
+
+12  Terraform S3 bucket
+
+    1: S3 bucket is container or directory with store all your files, everything in this bucket is object
+    2: For example, we put rthe pets.json into S3 bucket, this file can be accessed by url https://pets.us-west-1.amazonaws.com/pets.json
+    3: every objects contain key, value and MetaData. the key is name of file with extension, the value is data. Metadata contains the owner, size and last modified
