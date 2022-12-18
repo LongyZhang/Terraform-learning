@@ -247,12 +247,14 @@
 
 
 12  Terraform S3 bucket
+    ![image](https://user-images.githubusercontent.com/101307724/208283438-3940ee6e-c472-48f2-927b-de12db609748.png)
 
     1: S3 bucket is container or directory with store all your files, everything in this bucket is object
     2: For example, we put rthe pets.json into S3 bucket, this file can be accessed by url https://pets.us-west-1.amazonaws.com/pets.json
     3: every objects contain key, value and MetaData. the key is name of file with extension, the value is data. Metadata contains the owner, size and last modified
 
 13  DynamoDB with Terraform
+    ![image](https://user-images.githubusercontent.com/101307724/208283456-ded617a1-1abe-4b08-a892-cca6b431cf83.png)
 
     1: DynamoDB is a fully managed proprietary NoSQL database service that supports key–value and document data structures
 
