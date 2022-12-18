@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resouce":"arn:aws:s3:::${aws_s3_bucket.finance.id}",
+            "Resource": "*",
+            "Principal":{
+                "AWS":[
+                    "${data.aws}"
+                ]
+            }
+        }
+    ]
+}
