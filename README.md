@@ -298,7 +298,8 @@
     1: EC2 instance stands for Elastic Compute Cloud, it can create image from different OS 
     
     2: Create my first EC2 image from ubuntu
-    ![image](https://user-images.githubusercontent.com/101307724/208284109-ed8d85f8-f661-4de0-8ee2-f828790c2d32.png)
+    ![image](https://user-images.githubusercontent.com/101307724/208286555-2e278187-5074-4fee-89e3-394d733eca80.png)
+
 
     
 
