@@ -309,3 +309,66 @@
 
     $env:TF_LOG="TRACE"
     $env:TF_LOG_PATH="terraform.txt"
+
+
+17  Module in terraform
+
+    1: In the industried standard terraform code, it has more than 1000 line of code in TF files. In order to manage porperly, it is better to allocate the different tpye of code into module.
+    
+
+18  Terraform functions
+
+    Number function :
+    1: length() it gets length of data
+    2: toset() it change list data to set data
+    3: foreach it likes forloop
+    4: max() it get maximun number from set
+    5: min() it get minimum nubmer from set
+    6: cell() it is celling function in c++ or js
+    7: floor() it is floor function in c++ or js
+
+    string function: 
+    1: split("seperator") , it can create list whcih is seperated by seperator
+    2: lower("string") , it switchs all string to be lower case
+    3: upper("string") , it switchs all string to be upper case
+    4: title("string"), it highlights and upper the first elemnt in string
+    5: substr("string",starting index, length), it will extract the value from starting index with certain length
+    6: Jion(a,b,c) it will join a,b,c together to be list/array data
+    7: Index(data,"value"), it will give the index of value in data 
+    8: element(data,index), it will return the value in certain index of data
+    
+    Data structure functions:
+
+    Map in terraform is like the key-value pair data type ,it is different to JS and C++
+
+    1: keys(var.ami) will return 
+    [
+        one
+        two
+        three
+    ]
+
+    2: values(var.ami) will return
+    [
+        "haha"
+        "Bruh"
+        "No"
+    ]
+
+    variables "ami"{
+        type=map
+        default = {
+            one="haha"
+            two="Bruh"
+            three="No"
+        }
+    }
+
+    Math and logic operator:
+    it is same as another language
+
+    1: Terraform supports +, -, ==, !=, >, <, '
+    2: Terraform supports &&(and) ||(or)
+
+
+
