@@ -286,3 +286,9 @@
 
             EOF
         }
+
+14  Remote state in terraform
+
+    1: Previously we only create state file in local, but it does not allow us to work on same file collaboratively , the remote state can be used as a team
+    2: Remote state has a state locking, it prevents two user to apply terraform change at same time.
+    3: S3 bucket will store the state file, dynamoDB will provide state locking
