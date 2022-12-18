@@ -296,6 +296,11 @@
 15  What is EC2?
 
     1: EC2 instance stands for Elastic Compute Cloud, it can create image from different OS 
+    
+    2: Create my first EC2 image from ubuntu
+    ![image](https://user-images.githubusercontent.com/101307724/208284109-ed8d85f8-f661-4de0-8ee2-f828790c2d32.png)
+
+    
 
 
 16  Use log file to store logs
