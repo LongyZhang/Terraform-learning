@@ -1,0 +1,619 @@
+2022-12-18T16:58:27.492+1030 [INFO]  Terraform version: 1.3.6
+2022-12-18T16:58:27.495+1030 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2022-12-18T16:58:27.495+1030 [DEBUG] using github.com/hashicorp/hcl/v2 v2.15.0
+2022-12-18T16:58:27.495+1030 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2022-12-18T16:58:27.495+1030 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2022-12-18T16:58:27.496+1030 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2022-12-18T16:58:27.496+1030 [INFO]  Go runtime version: go1.19.3
+2022-12-18T16:58:27.496+1030 [INFO]  CLI args: []string{"D:\\terraform\\terraform.exe", "init"}
+2022-12-18T16:58:27.496+1030 [TRACE] Stdout is a terminal of width 84
+2022-12-18T16:58:27.500+1030 [TRACE] Stderr is a terminal of width 84
+2022-12-18T16:58:27.500+1030 [TRACE] Stdin is a terminal
+2022-12-18T16:58:27.502+1030 [DEBUG] Attempting to open CLI config file: C:\Users\sjia4\AppData\Roaming\terraform.rc
+2022-12-18T16:58:27.502+1030 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022-12-18T16:58:27.502+1030 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2022-12-18T16:58:27.502+1030 [DEBUG] ignoring non-existing provider search directory C:\Users\sjia4\AppData\Roaming\terraform.d\plugins
+2022-12-18T16:58:27.503+1030 [DEBUG] ignoring non-existing provider search directory C:\Users\sjia4\AppData\Roaming\HashiCorp\Terraform\plugins
+2022-12-18T16:58:27.503+1030 [INFO]  CLI command args: []string{"init"}
+2022-12-18T16:58:27.504+1030 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2022-12-18T16:58:27.504+1030 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2022-12-18T16:58:27.504+1030 [DEBUG] New state was assigned lineage "85732ccb-1c14-945d-47f1-da5f51f22228"
+2022-12-18T16:58:27.504+1030 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2022-12-18T16:58:27.504+1030 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2022-12-18T16:58:27.504+1030 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2022-12-18T16:58:27.505+1030 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/local v2.2.3 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\local\2.2.3\windows_386
+2022-12-18T16:58:27.505+1030 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\local\2.2.3\windows_386 as a candidate package for registry.terraform.io/hashicorp/local 2.2.3
+2022-12-18T16:58:27.548+1030 [DEBUG] checking for provisioner in "."
+2022-12-18T16:58:27.548+1030 [DEBUG] checking for provisioner in "D:\\terraform"
+2022-12-18T16:58:27.549+1030 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2022-12-18T16:58:27.549+1030 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2022-12-18T16:58:27.549+1030 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2022-12-18T16:58:27.549+1030 [TRACE] statemgr.Filesystem: read snapshot with lineage "c9a7b49e-c5a2-5b07-f047-1927e172cfdd" serial 1
+2022-12-18T16:58:27.549+1030 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2022-12-18T16:58:27.550+1030 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2022-12-18T16:58:27.715+1030 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/local/versions
+2022-12-18T16:58:27.715+1030 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/local/versions
+2022-12-18T16:58:27.786+1030 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2022-12-18T16:58:27.786+1030 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/local v2.2.3 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\local\2.2.3\windows_386
+2022-12-18T16:58:27.786+1030 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\local\2.2.3\windows_386 as a candidate package for registry.terraform.io/hashicorp/local 2.2.3
+2022-12-18T16:58:33.616+1030 [INFO]  Terraform version: 1.3.6
+2022-12-18T16:58:33.617+1030 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2022-12-18T16:58:33.617+1030 [DEBUG] using github.com/hashicorp/hcl/v2 v2.15.0
+2022-12-18T16:58:33.617+1030 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2022-12-18T16:58:33.617+1030 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2022-12-18T16:58:33.617+1030 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2022-12-18T16:58:33.617+1030 [INFO]  Go runtime version: go1.19.3
+2022-12-18T16:58:33.617+1030 [INFO]  CLI args: []string{"D:\\terraform\\terraform.exe", "plan"}
+2022-12-18T16:58:33.617+1030 [TRACE] Stdout is a terminal of width 84
+2022-12-18T16:58:33.617+1030 [TRACE] Stderr is a terminal of width 84
+2022-12-18T16:58:33.617+1030 [TRACE] Stdin is a terminal
+2022-12-18T16:58:33.619+1030 [DEBUG] Attempting to open CLI config file: C:\Users\sjia4\AppData\Roaming\terraform.rc
+2022-12-18T16:58:33.619+1030 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022-12-18T16:58:33.619+1030 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2022-12-18T16:58:33.619+1030 [DEBUG] ignoring non-existing provider search directory C:\Users\sjia4\AppData\Roaming\terraform.d\plugins
+2022-12-18T16:58:33.620+1030 [DEBUG] ignoring non-existing provider search directory C:\Users\sjia4\AppData\Roaming\HashiCorp\Terraform\plugins
+2022-12-18T16:58:33.620+1030 [INFO]  CLI command args: []string{"plan"}
+2022-12-18T16:58:33.621+1030 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2022-12-18T16:58:33.621+1030 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2022-12-18T16:58:33.621+1030 [DEBUG] New state was assigned lineage "ecee2dd2-dcdb-dbba-109d-b54114b2319f"
+2022-12-18T16:58:33.621+1030 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2022-12-18T16:58:33.621+1030 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2022-12-18T16:58:33.621+1030 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2022-12-18T16:58:33.621+1030 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/local v2.2.3 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\local\2.2.3\windows_386
+2022-12-18T16:58:33.621+1030 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\local\2.2.3\windows_386 as a candidate package for registry.terraform.io/hashicorp/local 2.2.3
+2022-12-18T16:58:33.666+1030 [DEBUG] checking for provisioner in "."
+2022-12-18T16:58:33.666+1030 [DEBUG] checking for provisioner in "D:\\terraform"
+2022-12-18T16:58:33.667+1030 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2022-12-18T16:58:33.667+1030 [INFO]  backend/local: starting Plan operation
+2022-12-18T16:58:33.671+1030 [TRACE] backend/local: requesting state manager for workspace "default"
+2022-12-18T16:58:33.671+1030 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2022-12-18T16:58:33.671+1030 [TRACE] backend/local: requesting state lock for workspace "default"
+2022-12-18T16:58:33.674+1030 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2022-12-18T16:58:33.675+1030 [TRACE] statemgr.Filesystem: existing snapshot has lineage "c9a7b49e-c5a2-5b07-f047-1927e172cfdd" serial 1
+2022-12-18T16:58:33.675+1030 [TRACE] statemgr.Filesystem: locking terraform.tfstate using LockFileEx
+2022-12-18T16:58:33.675+1030 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2022-12-18T16:58:33.680+1030 [TRACE] backend/local: reading remote state for workspace "default"
+2022-12-18T16:58:33.680+1030 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2022-12-18T16:58:33.680+1030 [TRACE] statemgr.Filesystem: read snapshot with lineage "c9a7b49e-c5a2-5b07-f047-1927e172cfdd" serial 1
+2022-12-18T16:58:33.680+1030 [TRACE] backend/local: populating backend.LocalRun for current working directory
+2022-12-18T16:58:33.680+1030 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/local has 2.2.3 to satisfy ""
+2022-12-18T16:58:33.680+1030 [TRACE] terraform.NewContext: starting
+2022-12-18T16:58:33.680+1030 [TRACE] terraform.NewContext: complete
+2022-12-18T16:58:33.680+1030 [TRACE] backend/local: requesting interactive input, if necessary
+2022-12-18T16:58:33.680+1030 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/local"
+2022-12-18T16:58:33.680+1030 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/hashicorp/local" to read its schema
+2022-12-18T16:58:33.680+1030 [DEBUG] created provider logger: level=trace
+2022-12-18T16:58:33.680+1030 [INFO]  provider: configuring client automatic mTLS
+2022-12-18T16:58:33.794+1030 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe]
+2022-12-18T16:58:33.798+1030 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe pid=20268
+2022-12-18T16:58:33.798+1030 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe
+2022-12-18T16:58:33.812+1030 [INFO]  provider.terraform-provider-local_v2.2.3_x5.exe: configuring server automatic mTLS: timestamp=2022-12-18T16:58:33.811+1030
+2022-12-18T16:58:33.861+1030 [DEBUG] provider.terraform-provider-local_v2.2.3_x5.exe: plugin address: address=127.0.0.1:10001 network=tcp timestamp=2022-12-18T16:58:33.860+1030
+2022-12-18T16:58:33.861+1030 [DEBUG] provider: using plugin: version=5
+2022-12-18T16:58:33.924+1030 [TRACE] GRPCProvider: GetProviderSchema
+2022-12-18T16:58:33.924+1030 [TRACE] provider.stdio: waiting for stdio data
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_provider_addr=provider tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:490 @module=sdk.proto tf_proto_version=5.2 tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @module=sdk.proto tf_proto_version=5.2 tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:497 tf_provider_addr=provider tf_rpc=GetProviderSchema timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Getting provider schema: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:70 @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found resource type: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:86 tf_provider_addr=provider tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a tf_resource_type=local_file tf_rpc=GetProviderSchema @module=sdk.helper_schema timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found resource type: tf_provider_addr=provider tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a tf_rpc=GetProviderSchema tf_resource_type=local_sensitive_file @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:86 @module=sdk.helper_schema timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found data source type: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:95 tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a tf_rpc=GetProviderSchema @module=sdk.helper_schema tf_data_source_type=local_file tf_provider_addr=provider timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found data source type: @module=sdk.helper_schema tf_data_source_type=local_sensitive_file tf_provider_addr=provider tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:95 timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @module=sdk.proto tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a tf_provider_addr=provider tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:503 tf_proto_version=5.2 timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: tf_rpc=GetProviderSchema tf_proto_version=5.2 tf_provider_addr=provider @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:509 @module=sdk.proto tf_req_id=fa52382d-21f7-f989-788f-4b126554e50a timestamp=2022-12-18T16:58:33.925+1030
+2022-12-18T16:58:33.925+1030 [TRACE] GRPCProvider: Close
+2022-12-18T16:58:33.926+1030 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2022-12-18T16:58:33.937+1030 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe pid=20268
+2022-12-18T16:58:33.937+1030 [DEBUG] provider: plugin exited
+2022-12-18T16:58:33.937+1030 [TRACE] Context.Input: Prompting for provider arguments
+2022-12-18T16:58:33.937+1030 [TRACE] Context.Input: Provider provider.local implied by resource block at main.tf:3,1-28
+2022-12-18T16:58:33.937+1030 [TRACE] Context.Input: Input for provider.local: map[string]cty.Value{}
+2022-12-18T16:58:33.937+1030 [TRACE] backend/local: running validation operation
+2022-12-18T16:58:33.937+1030 [DEBUG] Building and walking validate graph
+2022-12-18T16:58:33.937+1030 [TRACE] building graph for walkValidate
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] ConfigTransformer: Starting for path:
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+  local_file.pet - *terraform.NodeValidatableResource
+  ------
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.LocalTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.OutputTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.StateTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2022-12-18T16:58:33.937+1030 [TRACE] AttachResourceConfigTransformer: attaching to "local_file.pet" (*terraform.NodeValidatableResource) config from main.tf:3,1-28
+2022-12-18T16:58:33.937+1030 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to local_file.pet
+2022-12-18T16:58:33.937+1030 [TRACE] AttachResourceConfigTransformer: attaching to "local_file.cat" (*terraform.NodeValidatableResource) config from main.tf:9,1-28
+2022-12-18T16:58:33.937+1030 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to local_file.cat
+2022-12-18T16:58:33.937+1030 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2022-12-18T16:58:33.937+1030 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+  local_file.pet - *terraform.NodeValidatableResource
+  ------
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2022-12-18T16:58:33.938+1030 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/local"], implied first by local_file.cat
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+  local_file.pet - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/local"] serving local_file.pet
+2022-12-18T16:58:33.938+1030 [DEBUG] ProviderTransformer: "local_file.pet" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:33.938+1030 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/local"] serving local_file.cat
+2022-12-18T16:58:33.938+1030 [DEBUG] ProviderTransformer: "local_file.cat" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] AttachSchemaTransformer: attaching resource schema to local_file.pet
+2022-12-18T16:58:33.938+1030 [TRACE] AttachSchemaTransformer: attaching resource schema to local_file.cat
+2022-12-18T16:58:33.938+1030 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-12-18T16:58:33.938+1030 [DEBUG] ReferenceTransformer: "local_file.pet" references: []
+2022-12-18T16:58:33.938+1030 [DEBUG] ReferenceTransformer: "local_file.cat" references: []
+2022-12-18T16:58:33.938+1030 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/local\"]" references: []
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+    local_file.cat - *terraform.NodeValidatableResource
+    local_file.pet - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+    local_file.cat - *terraform.NodeValidatableResource
+    local_file.pet - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2022-12-18T16:58:33.938+1030 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2022-12-18T16:58:33.938+1030 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  local_file.cat - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+    local_file.cat - *terraform.NodeValidatableResource
+    local_file.pet - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2022-12-18T16:58:33.938+1030 [DEBUG] Starting graph walk: walkValidate
+2022-12-18T16:58:33.938+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"]": starting visit (*terraform.NodeApplyableProvider)
+2022-12-18T16:58:33.938+1030 [DEBUG] created provider logger: level=trace
+2022-12-18T16:58:33.939+1030 [INFO]  provider: configuring client automatic mTLS
+2022-12-18T16:58:33.980+1030 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe]
+2022-12-18T16:58:33.982+1030 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe pid=1716
+2022-12-18T16:58:33.982+1030 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe
+2022-12-18T16:58:33.993+1030 [INFO]  provider.terraform-provider-local_v2.2.3_x5.exe: configuring server automatic mTLS: timestamp=2022-12-18T16:58:33.993+1030
+2022-12-18T16:58:34.042+1030 [DEBUG] provider: using plugin: version=5
+2022-12-18T16:58:34.042+1030 [DEBUG] provider.terraform-provider-local_v2.2.3_x5.exe: plugin address: address=127.0.0.1:10001 network=tcp timestamp=2022-12-18T16:58:34.042+1030
+2022-12-18T16:58:34.105+1030 [TRACE] provider.stdio: waiting for stdio data
+2022-12-18T16:58:34.105+1030 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/local\"]" provider for provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:34.105+1030 [TRACE] NodeApplyableProvider: validating configuration for provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:34.105+1030 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/local"]: no configuration at all
+2022-12-18T16:58:34.105+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"]": visit complete
+2022-12-18T16:58:34.105+1030 [TRACE] vertex "local_file.pet": starting visit (*terraform.NodeValidatableResource)
+2022-12-18T16:58:34.105+1030 [TRACE] vertex "local_file.cat": starting visit (*terraform.NodeValidatableResource)
+2022-12-18T16:58:34.105+1030 [TRACE] GRPCProvider: ValidateResourceConfig
+2022-12-18T16:58:34.105+1030 [TRACE] GRPCProvider: GetProviderSchema
+2022-12-18T16:58:34.105+1030 [TRACE] GRPCProvider: ValidateResourceConfig
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_proto_version=5.2 tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d @module=sdk.proto tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:490 tf_provider_addr=provider timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:497 timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Getting provider schema: @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:70 timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found resource type: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:86 @module=sdk.helper_schema tf_provider_addr=provider tf_resource_type=local_sensitive_file tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d tf_rpc=GetProviderSchema timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found resource type: tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d tf_resource_type=local_file tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:86 @module=sdk.helper_schema tf_provider_addr=provider timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found data source type: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:95 tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d tf_provider_addr=provider tf_rpc=GetProviderSchema @module=sdk.helper_schema tf_data_source_type=local_file timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found data source type: @module=sdk.helper_schema tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d tf_rpc=GetProviderSchema tf_provider_addr=provider @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:95 tf_data_source_type=local_sensitive_file timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_proto_version=5.2 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:503 tf_provider_addr=provider tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d @module=sdk.proto timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.106+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:509 @module=sdk.proto tf_req_id=fd5156fd-5d8c-4127-1ade-e4244e339f5d tf_proto_version=5.2 tf_provider_addr=provider tf_rpc=GetProviderSchema timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_req_id=761d6713-3e45-0f4b-e293-1c54f704ca98 tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:678 timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:678 @module=sdk.proto tf_proto_version=5.2 tf_req_id=dfe1c47c-7b83-9c48-976c-6ebb36a1aa15 tf_rpc=ValidateResourceTypeConfig tf_provider_addr=provider timestamp=2022-12-18T16:58:34.106+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Skipping protocol data file writing because no data directory is set. Use the TF_LOG_SDK_PROTO_DATA_DIR environment variable to enable this functionality.: @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/internal/logging/protocol_data.go:38 tf_req_id=761d6713-3e45-0f4b-e293-1c54f704ca98 tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:686 tf_proto_version=5.2 tf_req_id=dfe1c47c-7b83-9c48-976c-6ebb36a1aa15 tf_rpc=ValidateResourceTypeConfig tf_resource_type=local_file @module=sdk.proto tf_provider_addr=provider timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=761d6713-3e45-0f4b-e293-1c54f704ca98 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:686 tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_provider_addr=provider tf_req_id=dfe1c47c-7b83-9c48-976c-6ebb36a1aa15 tf_resource_type=local_file @module=sdk.helper_schema tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:245 timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_req_id=761d6713-3e45-0f4b-e293-1c54f704ca98 tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:245 @module=sdk.helper_schema tf_provider_addr=provider timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_rpc=ValidateResourceTypeConfig tf_provider_addr=provider tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:247 @module=sdk.helper_schema tf_req_id=dfe1c47c-7b83-9c48-976c-6ebb36a1aa15 timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @module=sdk.helper_schema tf_provider_addr=provider tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:247 tf_req_id=761d6713-3e45-0f4b-e293-1c54f704ca98 tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_provider_addr=provider tf_rpc=ValidateResourceTypeConfig @module=sdk.proto tf_req_id=dfe1c47c-7b83-9c48-976c-6ebb36a1aa15 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:692 tf_proto_version=5.2 timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=761d6713-3e45-0f4b-e293-1c54f704ca98 tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:692 @module=sdk.proto tf_resource_type=local_file timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: tf_req_id=dfe1c47c-7b83-9c48-976c-6ebb36a1aa15 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:698 @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: tf_proto_version=5.2 tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:698 @module=sdk.proto tf_provider_addr=provider tf_req_id=761d6713-3e45-0f4b-e293-1c54f704ca98 timestamp=2022-12-18T16:58:34.107+1030
+2022-12-18T16:58:34.107+1030 [TRACE] vertex "local_file.cat": visit complete
+2022-12-18T16:58:34.107+1030 [TRACE] vertex "local_file.pet": visit complete
+2022-12-18T16:58:34.107+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2022-12-18T16:58:34.107+1030 [TRACE] GRPCProvider: Close
+2022-12-18T16:58:34.107+1030 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2022-12-18T16:58:34.121+1030 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe pid=1716
+2022-12-18T16:58:34.121+1030 [DEBUG] provider: plugin exited
+2022-12-18T16:58:34.121+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"] (close)": visit complete
+2022-12-18T16:58:34.121+1030 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2022-12-18T16:58:34.121+1030 [TRACE] vertex "root": visit complete
+2022-12-18T16:58:34.121+1030 [INFO]  backend/local: plan calling Plan
+2022-12-18T16:58:34.121+1030 [DEBUG] Building and walking plan graph for NormalMode
+2022-12-18T16:58:34.121+1030 [TRACE] building graph for walkPlan
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] ConfigTransformer: Starting for path:
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.LocalTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.OutputTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.StateTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2022-12-18T16:58:34.121+1030 [TRACE] AttachResourceConfigTransformer: attaching to "local_file.pet (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:3,1-28
+2022-12-18T16:58:34.121+1030 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to local_file.pet (expand)
+2022-12-18T16:58:34.121+1030 [TRACE] AttachResourceConfigTransformer: attaching to "local_file.cat (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:9,1-28
+2022-12-18T16:58:34.121+1030 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to local_file.cat (expand)
+2022-12-18T16:58:34.121+1030 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2022-12-18T16:58:34.121+1030 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2022-12-18T16:58:34.122+1030 [DEBUG] adding implicit provider configuration provider["registry.terraform.io/hashicorp/local"], implied first by local_file.cat (expand)
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/local"] serving local_file.pet (expand)
+2022-12-18T16:58:34.122+1030 [DEBUG] ProviderTransformer: "local_file.pet (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:34.122+1030 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/local"] serving local_file.cat (expand)
+2022-12-18T16:58:34.122+1030 [DEBUG] ProviderTransformer: "local_file.cat (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] AttachSchemaTransformer: attaching resource schema to local_file.pet (expand)
+2022-12-18T16:58:34.122+1030 [TRACE] AttachSchemaTransformer: attaching resource schema to local_file.cat (expand)
+2022-12-18T16:58:34.122+1030 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-12-18T16:58:34.122+1030 [DEBUG] ReferenceTransformer: "local_file.pet (expand)" references: []
+2022-12-18T16:58:34.122+1030 [DEBUG] ReferenceTransformer: "local_file.cat (expand)" references: []
+2022-12-18T16:58:34.122+1030 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/local\"]" references: []
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] AttachDependenciesTransformer: local_file.pet depends on []
+2022-12-18T16:58:34.122+1030 [TRACE] AttachDependenciesTransformer: local_file.cat depends on []
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] ForcedCBDTransformer: "local_file.pet (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2022-12-18T16:58:34.122+1030 [TRACE] ForcedCBDTransformer: "local_file.cat (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+    local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  ------
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+    local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2022-12-18T16:58:34.122+1030 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2022-12-18T16:58:34.122+1030 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+    local_file.cat (expand) - *terraform.nodeExpandPlannableResource
+    local_file.pet (expand) - *terraform.nodeExpandPlannableResource
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/hashicorp/local"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2022-12-18T16:58:34.122+1030 [DEBUG] Starting graph walk: walkPlan
+2022-12-18T16:58:34.122+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"]": starting visit (*terraform.NodeApplyableProvider)
+2022-12-18T16:58:34.122+1030 [DEBUG] created provider logger: level=trace
+2022-12-18T16:58:34.123+1030 [INFO]  provider: configuring client automatic mTLS
+2022-12-18T16:58:34.165+1030 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe]
+2022-12-18T16:58:34.167+1030 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe pid=14724
+2022-12-18T16:58:34.167+1030 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe
+2022-12-18T16:58:34.178+1030 [INFO]  provider.terraform-provider-local_v2.2.3_x5.exe: configuring server automatic mTLS: timestamp=2022-12-18T16:58:34.177+1030
+2022-12-18T16:58:34.227+1030 [DEBUG] provider: using plugin: version=5
+2022-12-18T16:58:34.227+1030 [DEBUG] provider.terraform-provider-local_v2.2.3_x5.exe: plugin address: address=127.0.0.1:10001 network=tcp timestamp=2022-12-18T16:58:34.226+1030
+2022-12-18T16:58:34.290+1030 [TRACE] provider.stdio: waiting for stdio data
+2022-12-18T16:58:34.290+1030 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/local\"]" provider for provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:34.290+1030 [TRACE] NodeApplyableProvider: configuring provider["registry.terraform.io/hashicorp/local"]
+2022-12-18T16:58:34.290+1030 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/local"]: no configuration at all
+2022-12-18T16:58:34.290+1030 [TRACE] GRPCProvider: GetProviderSchema
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_proto_version=5.2 tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:490 @module=sdk.proto tf_provider_addr=provider timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:497 tf_proto_version=5.2 tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 @module=sdk.proto tf_provider_addr=provider tf_rpc=GetProviderSchema timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Getting provider schema: @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:70 timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found resource type: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:86 @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 tf_resource_type=local_file timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found resource type: tf_provider_addr=provider tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:86 @module=sdk.helper_schema tf_resource_type=local_sensitive_file timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found data source type: @module=sdk.helper_schema tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:95 tf_data_source_type=local_sensitive_file tf_provider_addr=provider tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Found data source type: tf_data_source_type=local_file tf_provider_addr=provider @module=sdk.helper_schema tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:95 timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_provider_addr=provider tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:503 tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 @module=sdk.proto tf_proto_version=5.2 timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:509 tf_req_id=c1078e02-feff-5252-c8bf-865db8157667 tf_rpc=GetProviderSchema @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] GRPCProvider: ValidateProviderConfig
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 tf_rpc=PrepareProviderConfig @module=sdk.proto @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:517 tf_proto_version=5.2 tf_provider_addr=provider timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Skipping protocol data file writing because no data directory is set. Use the TF_LOG_SDK_PROTO_DATA_DIR environment variable to enable this functionality.: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/internal/logging/protocol_data.go:38 tf_rpc=PrepareProviderConfig @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:525 tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 tf_rpc=PrepareProviderConfig @module=sdk.proto timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Preparing provider configuration: @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:128 timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.291+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:216 @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 tf_rpc=PrepareProviderConfig timestamp=2022-12-18T16:58:34.291+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:218 timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_rpc=PrepareProviderConfig @module=sdk.proto tf_provider_addr=provider tf_proto_version=5.2 tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:531 timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=7b6917d6-9838-277b-22ba-fe7bd309a130 tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:538 @module=sdk.proto timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] GRPCProvider: ConfigureProvider
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_rpc=Configure tf_provider_addr=provider tf_req_id=652dbc93-74b8-b033-2594-f0108cd210c7 @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:546 @module=sdk.proto tf_proto_version=5.2 timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:554 tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=652dbc93-74b8-b033-2594-f0108cd210c7 tf_rpc=Configure @module=sdk.proto timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_req_id=652dbc93-74b8-b033-2594-f0108cd210c7 tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:556 @module=sdk.helper_schema tf_provider_addr=provider timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:558 @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=652dbc93-74b8-b033-2594-f0108cd210c7 timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:560 @module=sdk.proto tf_req_id=652dbc93-74b8-b033-2594-f0108cd210c7 tf_proto_version=5.2 tf_provider_addr=provider tf_rpc=Configure timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=652dbc93-74b8-b033-2594-f0108cd210c7 @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:566 @module=sdk.proto tf_rpc=Configure timestamp=2022-12-18T16:58:34.292+1030
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"]": visit complete
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.pet (expand)": starting visit (*terraform.nodeExpandPlannableResource)
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.cat (expand)": starting visit (*terraform.nodeExpandPlannableResource)
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.cat (expand)": expanding dynamic subgraph
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.pet (expand)": expanding dynamic subgraph
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] ResourceCountTransformer: adding local_file.cat as *terraform.NodePlannableResourceInstance
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  local_file.cat - *terraform.NodePlannableResourceInstance
+  ------
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceCountTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] NodeAbstractResourceInstance.AttachResourceState for local_file.cat
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-12-18T16:58:34.292+1030 [DEBUG] ReferenceTransformer: "local_file.cat" references: []
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.RootTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.cat (expand)": entering dynamic subgraph
+2022-12-18T16:58:34.292+1030 [TRACE] ResourceCountTransformer: adding local_file.pet as *terraform.NodePlannableResourceInstance
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  local_file.pet - *terraform.NodePlannableResourceInstance
+  ------
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceCountTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.cat": starting visit (*terraform.NodePlannableResourceInstance)
+2022-12-18T16:58:34.292+1030 [TRACE] NodeAbstractResourceInstance.AttachResourceState for local_file.pet
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] readResourceInstanceState: reading state for local_file.cat
+2022-12-18T16:58:34.292+1030 [DEBUG] ReferenceTransformer: "local_file.pet" references: []
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] Executing graph transform *terraform.RootTransformer
+2022-12-18T16:58:34.292+1030 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.pet (expand)": entering dynamic subgraph
+2022-12-18T16:58:34.292+1030 [TRACE] vertex "local_file.pet": starting visit (*terraform.NodePlannableResourceInstance)
+2022-12-18T16:58:34.292+1030 [TRACE] upgradeResourceState: schema version of local_file.cat is still 0; calling provider "local" for any other minor fixups
+2022-12-18T16:58:34.292+1030 [TRACE] GRPCProvider: UpgradeResourceState
+2022-12-18T16:58:34.292+1030 [TRACE] readResourceInstanceState: reading state for local_file.pet
+2022-12-18T16:58:34.292+1030 [TRACE] upgradeResourceState: schema version of local_file.pet is still 0; calling provider "local" for any other minor fixups
+2022-12-18T16:58:34.293+1030 [TRACE] GRPCProvider: UpgradeResourceState
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:707 @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=5b3a327a-cf33-eaa3-c10c-ff6c6a78e9a9 tf_resource_type=local_file tf_rpc=UpgradeResourceState timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_req_id=5b3a327a-cf33-eaa3-c10c-ff6c6a78e9a9 tf_rpc=UpgradeResourceState tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:714 @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_rpc=UpgradeResourceState tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=5bcca1a1-0f8a-269f-7301-576f6c36b68c tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:707 @module=sdk.proto timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_proto_version=5.2 tf_req_id=5bcca1a1-0f8a-269f-7301-576f6c36b68c tf_rpc=UpgradeResourceState @module=sdk.proto tf_provider_addr=provider tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:714 timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Upgrading JSON state: tf_provider_addr=provider tf_resource_type=local_file tf_rpc=UpgradeResourceState @module=sdk.helper_schema tf_req_id=5b3a327a-cf33-eaa3-c10c-ff6c6a78e9a9 @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:323 timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Upgrading JSON state: tf_provider_addr=provider tf_req_id=5bcca1a1-0f8a-269f-7301-576f6c36b68c @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:323 tf_rpc=UpgradeResourceState @module=sdk.helper_schema tf_resource_type=local_file timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_provider_addr=provider tf_req_id=5b3a327a-cf33-eaa3-c10c-ff6c6a78e9a9 tf_rpc=UpgradeResourceState tf_proto_version=5.2 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:720 @module=sdk.proto timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=5bcca1a1-0f8a-269f-7301-576f6c36b68c tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:720 @module=sdk.proto tf_rpc=UpgradeResourceState timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: tf_req_id=5b3a327a-cf33-eaa3-c10c-ff6c6a78e9a9 @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:727 @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_resource_type=local_file tf_rpc=UpgradeResourceState timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:727 @module=sdk.proto tf_proto_version=5.2 tf_resource_type=local_file tf_rpc=UpgradeResourceState tf_provider_addr=provider tf_req_id=5bcca1a1-0f8a-269f-7301-576f6c36b68c timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for local_file.pet
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.pet
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for local_file.cat
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.cat
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for local_file.pet
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.pet
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for local_file.cat
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.cat
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResourceInstance.refresh for local_file.pet
+2022-12-18T16:58:34.293+1030 [TRACE] NodeAbstractResourceInstance.refresh for local_file.cat
+2022-12-18T16:58:34.293+1030 [TRACE] GRPCProvider: ReadResource
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:736 @module=sdk.proto tf_resource_type=local_file tf_rpc=ReadResource tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=b235e9bd-0872-4ec2-3f54-8e1814bbd11a timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.293+1030 [TRACE] GRPCProvider: ReadResource
+2022-12-18T16:58:34.293+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:745 @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=b235e9bd-0872-4ec2-3f54-8e1814bbd11a tf_resource_type=local_file timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @module=sdk.helper_schema tf_req_id=b235e9bd-0872-4ec2-3f54-8e1814bbd11a tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/resource.go:1014 tf_provider_addr=provider tf_resource_type=local_file timestamp=2022-12-18T16:58:34.293+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:736 tf_proto_version=5.2 tf_req_id=eb13448f-91f5-dfff-20b3-ec44d64f7ff8 @module=sdk.proto tf_provider_addr=provider tf_resource_type=local_file timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_resource_type=local_file tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:745 @module=sdk.proto tf_provider_addr=provider tf_req_id=eb13448f-91f5-dfff-20b3-ec44d64f7ff8 tf_proto_version=5.2 timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/resource.go:1014 tf_resource_type=local_file @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=eb13448f-91f5-dfff-20b3-ec44d64f7ff8 tf_rpc=ReadResource timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @module=sdk.helper_schema tf_provider_addr=provider tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/resource.go:1016 tf_req_id=b235e9bd-0872-4ec2-3f54-8e1814bbd11a tf_rpc=ReadResource timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_rpc=ReadResource @module=sdk.helper_schema tf_req_id=eb13448f-91f5-dfff-20b3-ec44d64f7ff8 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/resource.go:1016 tf_provider_addr=provider timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:751 tf_provider_addr=provider tf_req_id=b235e9bd-0872-4ec2-3f54-8e1814bbd11a @module=sdk.proto tf_proto_version=5.2 tf_resource_type=local_file tf_rpc=ReadResource timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @module=sdk.proto tf_provider_addr=provider tf_req_id=eb13448f-91f5-dfff-20b3-ec44d64f7ff8 tf_proto_version=5.2 tf_resource_type=local_file tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:751 timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @module=sdk.proto tf_proto_version=5.2 tf_req_id=b235e9bd-0872-4ec2-3f54-8e1814bbd11a @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:758 tf_provider_addr=provider tf_resource_type=local_file tf_rpc=ReadResource timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:758 tf_resource_type=local_file @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=eb13448f-91f5-dfff-20b3-ec44d64f7ff8 tf_rpc=ReadResource timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for local_file.pet
+2022-12-18T16:58:34.294+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for local_file.cat
+2022-12-18T16:58:34.294+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.cat
+2022-12-18T16:58:34.294+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.pet
+2022-12-18T16:58:34.294+1030 [TRACE] Re-validating config for "local_file.cat"
+2022-12-18T16:58:34.294+1030 [TRACE] GRPCProvider: ValidateResourceConfig
+2022-12-18T16:58:34.294+1030 [TRACE] Re-validating config for "local_file.pet"
+2022-12-18T16:58:34.294+1030 [TRACE] GRPCProvider: ValidateResourceConfig
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:678 tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=5c536189-9ce6-53a7-9e80-8fbe495fc680 tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig @module=sdk.proto timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_req_id=5c536189-9ce6-53a7-9e80-8fbe495fc680 tf_resource_type=local_file @module=sdk.proto tf_provider_addr=provider tf_proto_version=5.2 tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:686 timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_provider_addr=provider tf_req_id=5c536189-9ce6-53a7-9e80-8fbe495fc680 tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig @module=sdk.helper_schema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:245 timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: @module=sdk.proto tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=013ca81c-3877-6835-7e9e-0b84836c8df4 @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:678 tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_provider_addr=provider tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:686 @module=sdk.proto tf_proto_version=5.2 tf_req_id=013ca81c-3877-6835-7e9e-0b84836c8df4 timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_rpc=ValidateResourceTypeConfig tf_provider_addr=provider @module=sdk.helper_schema tf_req_id=5c536189-9ce6-53a7-9e80-8fbe495fc680 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:247 timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:692 @module=sdk.proto tf_provider_addr=provider tf_rpc=ValidateResourceTypeConfig tf_proto_version=5.2 tf_req_id=5c536189-9ce6-53a7-9e80-8fbe495fc680 tf_resource_type=local_file timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] GRPCProvider: PlanResourceChange
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @module=sdk.proto tf_provider_addr=provider tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:698 tf_proto_version=5.2 tf_req_id=5c536189-9ce6-53a7-9e80-8fbe495fc680 tf_resource_type=local_file timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] GRPCProvider: PlanResourceChange
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @module=sdk.helper_schema tf_req_id=013ca81c-3877-6835-7e9e-0b84836c8df4 @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:245 tf_provider_addr=provider tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.294+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.16.0/helper/schema/grpc_provider.go:247 @module=sdk.helper_schema tf_provider_addr=provider tf_req_id=013ca81c-3877-6835-7e9e-0b84836c8df4 tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=013ca81c-3877-6835-7e9e-0b84836c8df4 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:692 tf_rpc=ValidateResourceTypeConfig @module=sdk.proto timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:698 @module=sdk.proto tf_provider_addr=provider tf_req_id=013ca81c-3877-6835-7e9e-0b84836c8df4 tf_proto_version=5.2 tf_resource_type=local_file tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-18T16:58:34.294+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: tf_proto_version=5.2 tf_rpc=PlanResourceChange @module=sdk.proto tf_provider_addr=provider tf_req_id=31a0ee23-d650-fd9e-de3a-0d48b6f10fd1 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:767 timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:778 @module=sdk.proto tf_provider_addr=provider tf_req_id=31a0ee23-d650-fd9e-de3a-0d48b6f10fd1 tf_proto_version=5.2 tf_resource_type=local_file tf_rpc=PlanResourceChange timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Received request: @module=sdk.proto tf_rpc=PlanResourceChange tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=af8131f0-20d1-159a-1184-d636feb5be88 tf_resource_type=local_file @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:767 timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Calling downstream: tf_proto_version=5.2 tf_resource_type=local_file tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:778 @module=sdk.proto tf_req_id=af8131f0-20d1-159a-1184-d636feb5be88 tf_provider_addr=provider timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_resource_type=local_file tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:784 tf_proto_version=5.2 tf_provider_addr=provider tf_req_id=af8131f0-20d1-159a-1184-d636feb5be88 @module=sdk.proto timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Called downstream: tf_proto_version=5.2 tf_req_id=31a0ee23-d650-fd9e-de3a-0d48b6f10fd1 tf_resource_type=local_file tf_rpc=PlanResourceChange @module=sdk.proto tf_provider_addr=provider @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:784 timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: @module=sdk.proto tf_proto_version=5.2 @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:791 tf_provider_addr=provider tf_req_id=af8131f0-20d1-159a-1184-d636feb5be88 tf_resource_type=local_file tf_rpc=PlanResourceChange timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [TRACE] provider.terraform-provider-local_v2.2.3_x5.exe: Served request: tf_provider_addr=provider tf_resource_type=local_file tf_rpc=PlanResourceChange tf_proto_version=5.2 tf_req_id=31a0ee23-d650-fd9e-de3a-0d48b6f10fd1 @caller=github.com/hashicorp/terraform-plugin-go@v0.9.0/tfprotov5/tf5server/server.go:791 @module=sdk.proto timestamp=2022-12-18T16:58:34.295+1030
+2022-12-18T16:58:34.295+1030 [WARN]  Provider "registry.terraform.io/hashicorp/local" produced an invalid plan for local_file.cat, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .directory_permission: planned value cty.StringVal("0777") for a non-computed attribute
+2022-12-18T16:58:34.295+1030 [WARN]  Provider "registry.terraform.io/hashicorp/local" produced an invalid plan for local_file.pet, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .directory_permission: planned value cty.StringVal("0777") for a non-computed attribute
+2022-12-18T16:58:34.295+1030 [TRACE] writeChange: recorded NoOp change for local_file.cat
+2022-12-18T16:58:34.295+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for local_file.cat
+2022-12-18T16:58:34.295+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.cat
+2022-12-18T16:58:34.295+1030 [TRACE] writeChange: recorded NoOp change for local_file.pet
+2022-12-18T16:58:34.295+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for local_file.pet
+2022-12-18T16:58:34.295+1030 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for local_file.pet
+2022-12-18T16:58:34.295+1030 [TRACE] vertex "local_file.cat": visit complete
+2022-12-18T16:58:34.295+1030 [TRACE] vertex "local_file.cat (expand)": dynamic subgraph completed successfully
+2022-12-18T16:58:34.295+1030 [TRACE] vertex "local_file.cat (expand)": visit complete
+2022-12-18T16:58:34.295+1030 [TRACE] vertex "local_file.pet": visit complete
+2022-12-18T16:58:34.295+1030 [TRACE] vertex "local_file.pet (expand)": dynamic subgraph completed successfully
+2022-12-18T16:58:34.295+1030 [TRACE] vertex "local_file.pet (expand)": visit complete
+2022-12-18T16:58:34.295+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2022-12-18T16:58:34.295+1030 [TRACE] GRPCProvider: Close
+2022-12-18T16:58:34.295+1030 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2022-12-18T16:58:34.307+1030 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/local/2.2.3/windows_386/terraform-provider-local_v2.2.3_x5.exe pid=14724
+2022-12-18T16:58:34.307+1030 [DEBUG] provider: plugin exited
+2022-12-18T16:58:34.307+1030 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/local\"] (close)": visit complete
+2022-12-18T16:58:34.307+1030 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2022-12-18T16:58:34.307+1030 [TRACE] vertex "root": visit complete
+2022-12-18T16:58:34.307+1030 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/local"
+2022-12-18T16:58:34.307+1030 [DEBUG] no planned changes, skipping apply graph check
+2022-12-18T16:58:34.307+1030 [INFO]  backend/local: plan operation completed
+2022-12-18T16:58:34.307+1030 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/local"
+2022-12-18T16:58:34.454+1030 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2022-12-18T16:58:34.486+1030 [TRACE] statemgr.Filesystem: unlocked by closing terraform.tfstate

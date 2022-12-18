@@ -296,5 +296,11 @@
 15  What is EC2?
 
     1: EC2 instance stands for Elastic Compute Cloud, it can create image from different OS 
-    
 
+
+16  Use log file to store logs
+
+    1: this is every good way to debug by tpye command into powershell, it will store all of log after running terraform 
+
+    $env:TF_LOG="TRACE"
+    $env:TF_LOG_PATH="terraform.txt"
