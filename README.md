@@ -294,10 +294,11 @@
     3: S3 bucket will store the state file, dynamoDB will provide state locking
 
 15  What is EC2?
+ ![image](https://user-images.githubusercontent.com/101307724/208286576-a1cf6607-17fa-4dae-ab3f-b85a4f0fcf54.png)
 
     1: EC2 instance stands for Elastic Compute Cloud, it can create image from different OS 
     
-    ![image](https://user-images.githubusercontent.com/101307724/208286576-a1cf6607-17fa-4dae-ab3f-b85a4f0fcf54.png)
+   
 
     2: Create my first EC2 image from ubuntu
     
